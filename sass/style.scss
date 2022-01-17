@@ -1,0 +1,141 @@
+//Variables
+$Fuente1: 'Fredoka One',
+cursive;
+$Fuente2:'Mulish',
+sans-serif;
+$color-fondo: #EBEBEB;
+$color-letter: #2F4C74;
+$color-subletter: #209A9F;
+$color-cajas: #C4C4C4;
+$color-tarjetas:#DBEBEC;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: $color-fondo;
+}
+.img img {
+    width: 19rem;
+    position: absolute;
+    z-index: -1;
+}
+header{
+    .nav{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;        
+        &_img{
+            width: 150px;
+            height: 110px;
+            padding: 10px;
+            margin-top: 15%;   
+        }
+        &_menu{
+            width: 60%;
+            padding: 10px;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+        }
+    }
+    .titulo{
+        width: 100%;
+        height: 300px;
+        .titulo_h1{
+            width: 100%;
+            height: 60px;
+            font-size: 40px;
+            font-weight: 300;
+            font-family: $Fuente1;
+            color: $color-letter;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .titulo_h2{
+            width: 100%;
+            height: 30px;
+            font-size: 32px;
+            font-weight: lighter;
+            font-family: $Fuente1;
+            color: $color-subletter;
+            text-align: center;
+        }
+        .titulo_p{
+            max-width: 75%;
+            height: 100px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: justify;
+            font-family: $Fuente2;
+            color: $color-letter;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .boton{
+            width: 40%;
+            height: 20px;
+            background-color: $color-letter;
+            border-radius: 5px;
+            margin-left: 20px;
+            .boton_a{
+                text-decoration: none;
+                .boton_a--p{
+                    font-size: 10px;
+                    font-family: $Fuente2;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+.section_one{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    border: 3px solid $color-subletter;
+    border-radius: 5px;
+    background-image: url(../img/Logo.png);
+    .card_one{
+        width: 400%;
+        height: 460px;
+        margin: 0 0 0 100%;
+        padding: 0;
+        animation: cambio 20s infinite;
+        animation-direction: alternate;
+        .card_one--one{
+            width: 100%;
+            height:450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 80%;
+                height: 400px;
+                border-radius: 10px;
+            }
+        // // @keyframes cambio {
+        //     0% {margin-left: 0;}
+        //     25% {margin-left: 0;}
+            
+        //     30% {margin: left -100%;}
+        //     50% {margin-left: -100%;}
+
+        //     55% {margin: left -200%;}
+        //     75% {margin-left: -200%;}
+        // }
+        }
+    
+    }
+   
+}
+
+    
+
